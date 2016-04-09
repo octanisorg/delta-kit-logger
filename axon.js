@@ -8,7 +8,7 @@
 	
 		$.getJSON( "http://localhost:8080/nervousnet-api/raw-sensor-data/BLE", function( data ) {
 			
-			$("#sensordata").html(data);
+			$("#sensordata").html(data.blepacket);
 			console.log(data)
 			
 		});
